@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Wavesurfer Addon Example</h1>
+
+<h1>{{ wavesurferStatus.currentTime }}</h1>
+{{ember-wavesurfer url="https://s3-eu-west-1.amazonaws.com/audiofile-uploads/english-news/190121011059.mp3" waveColor="blue"}}
+
+
+<button {{action "playWaveSurfer"}}>External Play Button</button>
 
 {{outlet}}
